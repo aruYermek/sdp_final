@@ -1,5 +1,6 @@
 package Notification;
+import Products.*;
 
 public interface Observer {
-    void update(Observable observable);
+    void update(Product product);
 }

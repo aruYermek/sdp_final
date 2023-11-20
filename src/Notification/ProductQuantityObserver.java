@@ -2,12 +2,12 @@ package Notification;
 
 import Products.*;
 
-public class ProductQuantityObserver implements Observer{
+public class ProductQuantityObserver implements Observer {
+
     @Override
-    public void update(Observable observable) {
-        Product product = (Product) observable;
+    public void update(Product product) {
         if (product.getQuantity() == 0) {
-            System.out.println("Товар " + product.getName() + " с количеством 0 не может быть приобретен.");
+            System.out.println("Attention: Product " + product.getName() + " is out of stock!");
         }
     }
 }

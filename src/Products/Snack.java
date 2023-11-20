@@ -16,5 +16,7 @@ public class Snack extends Product {
         return super.getName() + " (weight: " + weight + " г)";
     }
 
+
+
 }
 
